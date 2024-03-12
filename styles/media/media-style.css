@@ -1,0 +1,12 @@
+@media screen and (max-width:480px){
+    body main{
+        flex-direction: column !important;
+    }
+    img{
+        width: 300px;
+    }
+
+    .input-field .group input{
+        font-size: 20px;
+    }
+}

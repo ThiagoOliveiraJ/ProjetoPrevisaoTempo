@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #161719;
+    font-family: "Poppins", sans-serif;
+}
+
+body main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+
+.form .input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-field .group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.input-field .group i{
+    position: absolute;
+    left: 8px;
+    color: white;
+    font-size: 25px;
+}
+.input-field .group input{
+    border: 2px solid #646464;
+    border-radius: 5px;
+    background-color: #161719;
+    padding: 10px 10px 10px 50px;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.192);
+}
+.input-field .icon{
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.icon:active{
+    transform: scale(0.93);
+}
+
+.info{
+    margin-top: 10px;
+    transition: all.4s;
+}
+.textResult{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.result{
+    color: #fdda5d;
+}
+
+.none{
+    display: none;
+}
+
+.error{
+    color: rgb(207, 77, 77);
+    text-align: center;
+    font-size: 18px;
+}
