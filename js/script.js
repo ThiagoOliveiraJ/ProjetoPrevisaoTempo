@@ -5,16 +5,17 @@ $('#btn').on("click", function () {
         url: `https://goweather.herokuapp.com/weather/${cidade}`,
         dataType: "json",
         success: function (data) {
+            let p;
             if (!data.temperature.value && !data.wind) {
                 $('#temp').text("");
                 $('#wind').text("");
-                let p = $('<p class="error">Cidade não encontrada. Por favor, insira um nome de cidade válido.</p>')
+                p = $('<p class="error">Cidade não encontrada. Por favor, insira um nome de cidade válido.</p>')
                 $('.form').append(p);
             } else {
+                $('.error').text(' ')
                 $('#infoField').removeClass("none");
                 $('#temp').text(data.temperature);
                 $('#wind').text(data.wind);
-                console.log(data);
             }
 
         },
